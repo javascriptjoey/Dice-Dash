@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Adorable.otf">
+            <string>Adorable</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProjectDiceDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="supperdicedash" translatesAutoresizingMaskIntoConstraints="NO" id="yMo-96-v03">
+                                <rect key="frame" x="0.0" y="-25" width="389" height="692"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTa-RG-Klr" customClass="RoundedButton" customModule="ProjectDiceDash" customModuleProvider="target">
+                                <rect key="frame" x="60" y="580" width="254" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.49514197335025378" green="0.40104423121123239" blue="0.013803577399375258" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Adorable" family="Adorable" pointSize="14"/>
+                                <state key="normal" title="Place Bet $ Roll Dice">
+                                    <color key="titleColor" red="0.99588280916213989" green="0.88787573575973511" blue="0.19884651899337769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlaceBetRollDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9XG-z7-0Y8"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="piggybank" translatesAutoresizingMaskIntoConstraints="NO" id="0Ud-E0-TKR">
+                                <rect key="frame" x="265" y="14" width="84" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" text="Bankroll" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Znf-NO-4A2">
+                                <rect key="frame" x="246" y="130" width="122" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.48881635273972601" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.99588280920000005" green="0.88787573580000001" blue="0.198846519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Adorable" family="Adorable" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kfc-vf-2Oi">
+                                <rect key="frame" x="70" y="526" width="132" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$1,000.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M9Y-4Z-uSF">
+                                <rect key="frame" x="262" y="100" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="DLh-cC-hD7">
+                                <rect key="frame" x="196" y="444" width="145" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice" translatesAutoresizingMaskIntoConstraints="NO" id="Lwo-i4-WFI">
+                                <rect key="frame" x="279" y="518" width="74" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice-one" translatesAutoresizingMaskIntoConstraints="NO" id="NTY-bN-2bp">
+                                <rect key="frame" x="48" y="265" width="109" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice-five" translatesAutoresizingMaskIntoConstraints="NO" id="OgT-hr-VUJ">
+                                <rect key="frame" x="222" y="265" width="109" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Casino" translatesAutoresizingMaskIntoConstraints="NO" id="nVe-Jz-qdf">
+                                <rect key="frame" x="27" y="55" width="182" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Enter Max Bet" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S0f-qT-Brv">
+                                <rect key="frame" x="70" y="494" width="124" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.99588280920000005" green="0.88787573580000001" blue="0.198846519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yMo-96-v03" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="DWK-Fg-UR4"/>
+                            <constraint firstItem="yMo-96-v03" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YI4-VB-a4e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="DiceImage1" destination="NTY-bN-2bp" id="hnJ-Zc-OyO"/>
+                        <outlet property="DiceImage2" destination="OgT-hr-VUJ" id="Ayq-On-s3P"/>
+                        <outlet property="MaxBet" destination="kfc-vf-2Oi" id="YXg-WP-GAH"/>
+                        <outlet property="MyBankRollAmount" destination="M9Y-4Z-uSF" id="mkk-7I-WX2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Casino" width="268" height="268"/>
+        <image name="coins" width="658" height="746"/>
+        <image name="dice" width="512" height="512"/>
+        <image name="dice-five" width="260" height="260"/>
+        <image name="dice-one" width="260" height="260"/>
+        <image name="piggybank" width="256" height="256"/>
+        <image name="supperdicedash" width="1242" height="2208"/>
+    </resources>
+</document>
